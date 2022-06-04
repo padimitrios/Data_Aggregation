@@ -773,7 +773,7 @@ broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 
       rtimer_clock_t start;
       start = RTIMER_NOW();
-      root = tree_generation(14,strings);
+      root = tree_generation(5,strings);
       printf("The guide tree took %u ticks to generate (rtimer tick is 1/32768 sec) \n", (RTIMER_NOW() - start));
       one_iteration++;
     }
